@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item_details"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Item Details"
+      android:id="@+id/id"
+      android:gravity="center"
+      android:textSize="40dp"
+      android:textColor="#000"
+      android:background="#3E58E2"
+      />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/user_name"
+      android:layout_below="@+id/id"
+      android:text="User Name: "
+      android:textSize="20dp"
+      android:textColor="#000"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="5dp"
+      />
+
+  <TextView
+      android:layout_width="200dp"
+      android:layout_height="35dp"
+      android:id="@+id/U_name"
+      android:layout_below="@+id/id"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="120dp"
+      />
+
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/iname"
+       android:layout_below="@+id/user_name"
+       android:text="Item Name: "
+       android:textSize="20dp"
+       android:textColor="#000"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="5dp"
+       />
+
+   <TextView
+       android:layout_width="200dp"
+       android:layout_height="35dp"
+       android:id="@+id/Ein"
+       android:layout_below="@+id/U_name"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="120dp"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iprice"
+        android:layout_below="@+id/iname"
+        android:text="Item Price: "
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:id="@+id/Eip"
+        android:layout_below="@+id/Ein"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="120dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@+id/Eip"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill in the details below:"
+        android:id="@+id/cd"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:text="Quantity:"
+        android:textColor="#000"
+        android:layout_below="@+id/cd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/cd"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:text="Size:"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/quantity"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:id="@+id/size"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/quantity"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fill_id"
+        android:text="ID: "
+        android:textColor="#000"
+        android:layout_below="@+id/t2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:id="@+id/type_id"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/size"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        >
+    </EditText>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart"
+        android:text="Add to Cart"
+        android:layout_below="@+id/fill_id"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+        android:textColor="#000"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vc"
+        android:text="View Cart"
+        android:layout_below="@+id/cart"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+        android:textColor="#000"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:text="Update Cart"
+        android:layout_below="@+id/vc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+        android:textColor="#000"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:text="Delete"
+        android:layout_below="@+id/update"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+        android:textColor="#000"
+        tools:ignore="OnClick" />
+
+ </RelativeLayout>
+</ScrollView>
