@@ -1,4 +1,4 @@
-**Uniform Shopping App**
+# Uniform Shopping App
 
 - Developed an intuitive mobile application that enabled students and parents to easily book school uniforms online.
 
