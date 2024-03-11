@@ -2,8 +2,6 @@
 
 - Developed an intuitive mobile application that enabled students and parents to easily book school uniforms online.
 
-![Demo Video](App Demo Video.mp4)
-
 **Highly Recommend skimming: Code Complexity file in Documentation and App Demo Video**
 
 *Documentation Folder*:
